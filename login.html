@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - Bienestar360</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Bienestar360</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="form-container">
+        <h2>Iniciar Sesión</h2>
+        <form id="login-form">
+            <label for="login-username">Usuario:</label>
+            <input type="text" id="login-username" name="login-username" required>
+            
+            <label for="login-password">Contraseña:</label>
+            <input type="password" id="login-password" name="login-password" required>
+            
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </section>
+
+    <footer class="Credenciales">
+        <p>&copy; Todos los derechos reservados a Bienestar360.</p>
+    </footer>
+
+    <script>
+        // Captura el formulario y escucha el evento de submit
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evita el envío predeterminado del formulario
+            
+            // Redirige a la página de inicio después de iniciar sesión
+            window.location.href = "index.html";
+        });
+    </script>
+
+</body>
+</html>
+
+
